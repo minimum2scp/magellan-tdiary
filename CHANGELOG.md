@@ -1,3 +1,7 @@
+## 0.1.11 (2016-03-30)
+
+ * Update tdiary-core, tdiary-contirb to 5.0.0
+
 ## 0.1.10 (2016-02-15)
 
  * Update magellan-proxy to 0.1.3
