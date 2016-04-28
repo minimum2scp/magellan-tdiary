@@ -1,4 +1,4 @@
-FROM ruby:2.3.0
+FROM ruby:2.3.1
 MAINTAINER YAMADA Tsuyoshi <tyamada@minimum2scp.org>
 
 ## install tdiary-core to /usr/src/app
