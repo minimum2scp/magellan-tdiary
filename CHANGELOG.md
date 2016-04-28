@@ -1,3 +1,8 @@
+## 0.1.12dev (2016-04-xx)
+
+ * Upgrade docker-compose.yml format to version 2
+ * Dropped support of legacy container links in entrypoint script
+
 ## 0.1.11 (2016-03-30)
 
  * Update tdiary-core, tdiary-contirb to 5.0.0
