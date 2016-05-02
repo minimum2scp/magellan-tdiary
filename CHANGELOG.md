@@ -2,6 +2,7 @@
 
  * Upgrade docker-compose.yml format to version 2
  * Dropped support of legacy container links in entrypoint script
+ * Update magellan-proxy to 0.1.4
 
 ## 0.1.11 (2016-03-30)
 
