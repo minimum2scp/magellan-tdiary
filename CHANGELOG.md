@@ -1,7 +1,8 @@
-## 0.1.12dev (2016-04-xx)
+## 0.1.12dev (2016-05-xx)
 
  * Upgrade docker-compose.yml format to version 2
  * Dropped support of legacy container links in entrypoint script
+ * Update ruby to 2.3.1
  * Locked versions of tdiary-{core,contrib,cache-null,io-rdb,style-gfm}
 
 ## 0.1.11 (2016-03-30)

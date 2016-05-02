@@ -1,4 +1,4 @@
-FROM ruby:2.3.0
+FROM ruby:2.3.1
 MAINTAINER YAMADA Tsuyoshi <tyamada@minimum2scp.org>
 
 ENV TDIARY_CORE_VERSION=v5.0.0
