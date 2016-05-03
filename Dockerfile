@@ -1,8 +1,14 @@
 FROM ruby:2.3.1
 MAINTAINER YAMADA Tsuyoshi <tyamada@minimum2scp.org>
 
+ENV TDIARY_CORE_VERSION=v5.0.0
+ENV TDIARY_CONTRIB_VERSION=v5.0.0
+ENV TDIARY_CACHE_NULL_VERSION=v0.1.2
+ENV TDIARY_IO_RDB_VERSION=v0.0.2
+ENV TDIARY_STYLE_GFM_VERSION=v0.3.0
+
 ## install tdiary-core to /usr/src/app
-RUN git clone https://github.com/tdiary/tdiary-core.git /usr/src/app
+RUN git clone -b ${TDIARY_CORE_VERSION} https://github.com/tdiary/tdiary-core.git /usr/src/app
 RUN cd /usr/src/app && bundle install --jobs=4 --without=development:test
 
 ## customize tdiary
