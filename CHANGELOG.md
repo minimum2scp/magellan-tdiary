@@ -4,6 +4,7 @@
  * Dropped support of legacy container links in entrypoint script
  * Update ruby to 2.3.1
  * Locked versions of tdiary-{core,contrib,cache-null,io-rdb,style-gfm}
+ * Update magellan-proxy to 0.1.4
 
 ## 0.1.11 (2016-03-30)
 
