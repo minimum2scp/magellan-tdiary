@@ -1,4 +1,4 @@
-## 0.1.12dev (2016-05-xx)
+## 0.1.12 (2016-05-09)
 
  * Upgrade docker-compose.yml format to version 2
  * Dropped support of legacy container links in entrypoint script
