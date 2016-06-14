@@ -6,6 +6,8 @@ services:
       - ./volumes/nginx/tdiary.conf:/etc/nginx/conf.d/tdiary.conf:ro
 
   tdiary:
+    build:
+      context: .
     image: minimum2scp/magellan-tdiary:0.1.13
     command: >
       bundle exec passenger start -e production -p 80 --max-pool-size 3
