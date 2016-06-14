@@ -1,3 +1,7 @@
+## 0.1.13 (2016-06-xx)
+
+ * Update magellan-proxy to 0.1.5
+
 ## 0.1.12 (2016-05-09)
 
  * Upgrade docker-compose.yml format to version 2
