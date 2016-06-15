@@ -75,10 +75,10 @@ environment variable:
 
 ### magellan-proxy
 
-Options of [magellan-proxy](https://github.com/groovenauts/magellan-proxy)
-is configured by environment variables:
+[magellan-proxy](https://github.com/groovenauts/magellan-proxy) is configured by
+environment variables:
 
- * `MAGELLAN_PROXY_TIMEZONE` (default: `Asia/Tokyo`)
+ * `TIMEZONE` (default: `Asia/Tokyo`)
 
 ## Local test with docker-compose
 
