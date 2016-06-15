@@ -44,7 +44,7 @@ ENV MAGELLAN_PROXY_TIMEZONE Asia/Tokyo
 WORKDIR /usr/src/app
 
 ENTRYPOINT ["/opt/magellan-tdiary/entrypoint"]
-CMD [ "magellan-proxy", "-n", "5", "--timezone", "${MAGELLAN_PROXY_TIMEZONE}" \
+CMD [ "magellan-proxy", "-n", "5", "--timezone", "${MAGELLAN_PROXY_TIMEZONE}", \
       "bundle", "exec", "passenger", "start", "-p", "80", "-e", "production", "--max-pool-size", "3", \
       "--pid-file", "tmp/passenger.pid", "--load-shell-envvars", "--static-files-dir", "public" ]
 
