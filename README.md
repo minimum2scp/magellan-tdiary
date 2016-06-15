@@ -73,12 +73,44 @@ environment variable:
 
  * `RUBY_GC_PROFILER_ENABLED` (default: `true`)
 
-## Local test with docker-compose
+### magellan-proxy
 
-You can try tDiary with docker-compose:
+[magellan-proxy](https://github.com/groovenauts/magellan-proxy) is configured by
+environment variables:
+
+ * `TIMEZONE` (default: `Asia/Tokyo`)
+
+
+## Development
+
+### Build
+
+You can build magellan-tdiary with docker-compose:
 
 ```
-% docker-compose up -d 
+% editor some-file               # Edit what you want
+% editor docker-compose.yml      # Edit tag of minimum2scp/magellan-tdiary image if necessary
+% docker-compose build tdiary
+```
+
+### Local test
+
+At first, if you want to use local build image, run:
+
+```
+% docker-compose build tdiary
+```
+
+Or pull image from [Docker Hub](https://hub.docker.com/r/minimum2scp/magellan-tdiary/):
+
+```
+% docker-compose pull tdiary
+```
+
+Then you can test magellan-tdiary with docker-compose:
+
+```
+% docker-compose up -d
 Creating magellantdiary_db_1...
 Creating magellantdiary_tdiary_1...
 Creating magellantdiary_nginx_1...
@@ -104,5 +136,4 @@ magellantdiary_tdiary_3   /opt/magellan-tdiary/entry ...   Up      80/tcp
 ```
 
 See docker-compose.yml for details.
-
 

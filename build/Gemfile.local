@@ -11,6 +11,10 @@ gem "tdiary-io-rdb",           github: "tdiary/tdiary-io-rdb",          ref: ENV
 gem "tdiary-style-gfm",        github: "tdiary/tdiary-style-gfm",       ref: ENV["TDIARY_STYLE_GFM_VERSION"]
 
 gem "newrelic_rpm"
+
 gem "flamegraph"
+## flamegraph gem depends on stackprof or fast_stack gem
+gem "stackprof"
+
 gem "rack-mini-profiler", require: false
 

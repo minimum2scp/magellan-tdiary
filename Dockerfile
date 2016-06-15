@@ -6,6 +6,7 @@ ENV TDIARY_CONTRIB_VERSION=v5.0.0
 ENV TDIARY_CACHE_NULL_VERSION=v0.1.2
 ENV TDIARY_IO_RDB_VERSION=v0.0.2
 ENV TDIARY_STYLE_GFM_VERSION=v0.3.0
+ENV MAGELLAN_PROXY_VERSION=0.1.5
 
 ## install tdiary-core to /usr/src/app
 RUN git clone -b ${TDIARY_CORE_VERSION} https://github.com/tdiary/tdiary-core.git /usr/src/app
@@ -28,7 +29,7 @@ RUN install -m 755 -o root -g root -p -D /build/entrypoint /opt/magellan-tdiary/
 RUN install -m 644 -o root -g root -p -D /build/Rakefile   /opt/magellan-tdiary/Rakefile
 
 ## install magellan-proxy
-ADD https://github.com/groovenauts/magellan-proxy/releases/download/v0.1.4/magellan-proxy-0.1.4_linux-amd64 /usr/local/bin/magellan-proxy
+ADD https://github.com/groovenauts/magellan-proxy/releases/download/v${MAGELLAN_PROXY_VERSION}/magellan-proxy-${MAGELLAN_PROXY_VERSION}_linux-amd64 /usr/local/bin/magellan-proxy
 RUN chmod +x /usr/local/bin/magellan-proxy
 
 ## cleanup
@@ -38,6 +39,7 @@ ENV RACK_MINI_PROFILER_ENABLED true
 ENV RUBY_GC_PROFILER_ENABLED true
 ENV TDIARY_BASIC_AUTH_USERNAME tdiary
 ENV TDIARY_BASIC_AUTH_PASSWORD tdiary
+ENV TIMEZONE Asia/Tokyo
 
 WORKDIR /usr/src/app
 
