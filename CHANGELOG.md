@@ -1,6 +1,7 @@
 ## 0.1.13 (2016-06-xx)
 
  * Update magellan-proxy to 0.1.5
+ * Added environment variable `MAGELLAN_PROXY_TIMEZONE`
  * Install stackprof gem to install latest flamegraph (v0.9.5)
 
 ## 0.1.12 (2016-05-09)
