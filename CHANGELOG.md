@@ -1,4 +1,4 @@
-## 0.1.13 (2016-06-xx)
+## 0.1.13 (2016-06-16)
 
  * Update magellan-proxy to 0.1.5
  * Added environment variable `TIMEZONE`
