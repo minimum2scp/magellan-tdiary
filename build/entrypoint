@@ -1,5 +1,7 @@
 #! /usr/bin/env ruby
 
+require 'shellwords'
+
 if ENV['TDIARY_BASIC_AUTH_USERNAME'] && ENV['TDIARY_BASIC_AUTH_PASSWORD']
   system('rake -f /opt/magellan-tdiary/Rakefile htpasswd:create')
   ENV.delete('TDIARY_BASIC_AUTH_USERNAME')
@@ -14,5 +16,4 @@ if ENV['DATABASE_URL']
   system('rake -f /opt/magellan-tdiary/Rakefile db:create')
 end
 
-program = ARGV.shift
-exec(program, *ARGV)
+exec(Shellwords.join(ARGV))
