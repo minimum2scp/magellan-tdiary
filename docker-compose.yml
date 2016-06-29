@@ -8,7 +8,7 @@ services:
   tdiary:
     build:
       context: .
-    image: minimum2scp/magellan-tdiary:0.1.13
+    image: minimum2scp/magellan-tdiary:0.1.14pre1
     command: >
       bundle exec passenger start -e production -p 80 --max-pool-size 3
       --pid-file tmp/passenger.pid --load-shell-envvars --static-files-dir public
