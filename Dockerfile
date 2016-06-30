@@ -1,8 +1,8 @@
 FROM ruby:2.3.1
 MAINTAINER YAMADA Tsuyoshi <tyamada@minimum2scp.org>
 
-ENV TDIARY_CORE_VERSION=v5.0.0
-ENV TDIARY_CONTRIB_VERSION=v5.0.0
+ENV TDIARY_CORE_VERSION=v5.0.1
+ENV TDIARY_CONTRIB_VERSION=v5.0.1
 ENV TDIARY_CACHE_NULL_VERSION=v0.1.2
 ENV TDIARY_IO_RDB_VERSION=v0.0.2
 ENV TDIARY_STYLE_GFM_VERSION=v0.3.0
@@ -19,7 +19,7 @@ RUN cp -a /build/tdiary.conf   /usr/src/app/
 RUN cp -a /build/config.ru     /usr/src/app/
 
 ## copy js, theme to public/assets
-RUN cd /usr/src/app && rake assets:copy
+RUN cd /usr/src/app && bin/tdiary assets_copy
 
 ## download Phusion Passenger agent binary
 RUN passenger start --runtime-check-only
