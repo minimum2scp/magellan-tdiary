@@ -1,4 +1,4 @@
-## 0.1.14 (2016-0x-xx)
+## 0.1.14 (2016-07-01)
 
  * Update tdiary-core, tdiary-contirb to 5.0.1
 
