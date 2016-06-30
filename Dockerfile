@@ -19,7 +19,7 @@ RUN cp -a /build/tdiary.conf   /usr/src/app/
 RUN cp -a /build/config.ru     /usr/src/app/
 
 ## copy js, theme to public/assets
-RUN cd /usr/src/app && rake assets:copy
+RUN cd /usr/src/app && bin/tdiary assets_copy
 
 ## download Phusion Passenger agent binary
 RUN passenger start --runtime-check-only
