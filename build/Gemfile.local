@@ -18,5 +18,3 @@ gem "stackprof"
 
 gem "rack-mini-profiler", require: false
 
-## To run rake tasks (workaround for https://github.com/tdiary/tdiary-core/issues/575)
-gem "octokit"

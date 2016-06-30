@@ -1,7 +1,6 @@
 ## 0.1.14 (2016-0x-xx)
 
  * Update tdiary-core, tdiary-contirb to 5.0.1
- * Added octokit gem in Gemfile.local (workaround for https://github.com/tdiary/tdiary-core/issues/575)
 
 ## 0.1.13 (2016-06-16)
 
