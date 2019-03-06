@@ -6,7 +6,7 @@ ENV TDIARY_CONTRIB_VERSION=v5.0.11
 ENV TDIARY_CACHE_NULL_VERSION=v0.1.2
 ENV TDIARY_IO_RDB_VERSION=v0.0.2
 ENV TDIARY_STYLE_GFM_VERSION=v1.2.0
-ENV MAGELLAN_PROXY_VERSION=0.1.5
+ENV MAGELLAN_PROXY_VERSION=0.1.9
 
 ## install tdiary-core to /usr/src/app
 RUN git clone -b ${TDIARY_CORE_VERSION} https://github.com/tdiary/tdiary-core.git /usr/src/app

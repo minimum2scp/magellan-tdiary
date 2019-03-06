@@ -3,6 +3,7 @@
  * Update ruby to 2.6.1
  * Update tdiary-core, tdiary-contrib to 5.0.11
  * Update tdiary-style-gfm to 1.2.0
+ * Update magellan-proxy to 0.1.9
 
 ## 0.1.14 (2016-07-01)
 
