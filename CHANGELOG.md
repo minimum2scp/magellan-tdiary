@@ -5,6 +5,7 @@
  * Update tdiary-style-gfm to 1.2.0
  * Update magellan-proxy to 0.1.9
  * Update nginx to 1.14, mysql to 5.7 in docker-compose.yml
+ * Install libidn11-dev package for tdiary-style-gfm gem dependency
 
 ## 0.1.14 (2016-07-01)
 

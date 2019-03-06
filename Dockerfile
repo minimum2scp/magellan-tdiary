@@ -12,6 +12,11 @@ ENV MAGELLAN_PROXY_VERSION=0.1.9
 RUN git clone -b ${TDIARY_CORE_VERSION} https://github.com/tdiary/tdiary-core.git /usr/src/app
 RUN cd /usr/src/app && bundle install --jobs=4 --without=development:test
 
+## install libidn11-dev package
+## (tdiary-style-gfm gem depends on twitter-text gem, twitter-text gem depends on idn-ruby gem)
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libidn11-dev
+
 ## customize tdiary
 ADD build /build
 RUN cp -a /build/Gemfile.local /usr/src/app/ && cd /usr/src/app && bundle install
