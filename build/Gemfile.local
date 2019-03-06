@@ -2,13 +2,13 @@ gem "passenger"
 gem "mysql2"
 
 gem "tdiary",                  path: "."
-gem "tdiary-contrib",          github: "tdiary/tdiary-contrib",         ref: ENV["TDIARY_CONTRIB_VERSION"]
+gem "tdiary-contrib",          git: "https://github.com/tdiary/tdiary-contrib",         ref: ENV["TDIARY_CONTRIB_VERSION"]
 
-gem "tdiary-cache-null",       github: "tdiary/tdiary-cache-null",      ref: ENV["TDIARY_CACHE_NULL_VERSION"]
+gem "tdiary-cache-null",       git: "https://github.com/tdiary/tdiary-cache-null",      ref: ENV["TDIARY_CACHE_NULL_VERSION"]
 
-gem "tdiary-io-rdb",           github: "tdiary/tdiary-io-rdb",          ref: ENV["TDIARY_IO_RDB_VERSION"],     require: (ENV["DATABASE_URL"] && 'tdiary/io/rdb')
+gem "tdiary-io-rdb",           git: "https://github.com/tdiary/tdiary-io-rdb",          ref: ENV["TDIARY_IO_RDB_VERSION"],     require: (ENV["DATABASE_URL"] && 'tdiary/io/rdb')
 
-gem "tdiary-style-gfm",        github: "tdiary/tdiary-style-gfm",       ref: ENV["TDIARY_STYLE_GFM_VERSION"]
+gem "tdiary-style-gfm",        git: "https://github.com/tdiary/tdiary-style-gfm",       ref: ENV["TDIARY_STYLE_GFM_VERSION"]
 
 gem "newrelic_rpm"
 
