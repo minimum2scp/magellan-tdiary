@@ -1,6 +1,8 @@
 ## 0.1.15 (2019-03-06)
 
  * Update ruby to 2.6.1
+ * Update tdiary-core, tdiary-contrib to 5.0.11
+ * Update tdiary-style-gfm to 1.2.0
 
 ## 0.1.14 (2016-07-01)
 
