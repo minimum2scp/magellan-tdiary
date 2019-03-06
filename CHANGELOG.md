@@ -1,3 +1,12 @@
+## 0.1.15 (2019-03-06)
+
+ * Update ruby to 2.6.1
+ * Update tdiary-core, tdiary-contrib to 5.0.11
+ * Update tdiary-style-gfm to 1.2.0
+ * Update magellan-proxy to 0.1.9
+ * Update nginx to 1.14, mysql to 5.7 in docker-compose.yml
+ * Install libidn11-dev package for tdiary-style-gfm gem dependency
+
 ## 0.1.14 (2016-07-01)
 
  * Update tdiary-core, tdiary-contrib to 5.0.1

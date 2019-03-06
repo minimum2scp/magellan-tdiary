@@ -1,14 +1,14 @@
 version: "2"
 services:
   nginx:
-    image: nginx:1.11
+    image: nginx:1.14
     volumes:
       - ./volumes/nginx/tdiary.conf:/etc/nginx/conf.d/tdiary.conf:ro
 
   tdiary:
     build:
       context: .
-    image: minimum2scp/magellan-tdiary:0.1.14
+    image: minimum2scp/magellan-tdiary:0.1.15pre1
     command: >
       bundle exec passenger start -e production -p 80 --max-pool-size 3
       --pid-file tmp/passenger.pid --load-shell-envvars --static-files-dir public
@@ -27,9 +27,8 @@ services:
       #- RUBY_GC_PROFILER_ENABLED=false
 
   db:
-    image: mysql:5.6
-    volumes:
-      - ./volumes/mysql/charset.cnf:/etc/mysql/conf.d/charset.cnf:ro
+    image: mysql:5.7
+    command: --character-set-server=utf8 --collation-server=utf8_unicode_ci
     environment:
       - MYSQL_ROOT_PASSWORD=password
       - MYSQL_USER=tdiary

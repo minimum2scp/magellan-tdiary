@@ -12,7 +12,7 @@ if ENV['RACK_MINI_PROFILER_ENABLED'] =~ /\A(true|yes|on|1)\z/
   }
 end
 
-$:.unshift( File.join(File::expand_path(File::dirname( __FILE__ )), 'lib' ).untaint )
+$:.unshift( File.join(File::expand_path(File::dirname( __FILE__ )), 'lib' ) )
 require 'tdiary/application'
 
 use ::Rack::Reloader unless ENV['RACK_ENV'] == 'production'

@@ -1,16 +1,21 @@
-FROM ruby:2.3.1
+FROM ruby:2.6.1
 MAINTAINER YAMADA Tsuyoshi <tyamada@minimum2scp.org>
 
-ENV TDIARY_CORE_VERSION=v5.0.1
-ENV TDIARY_CONTRIB_VERSION=v5.0.1
+ENV TDIARY_CORE_VERSION=v5.0.11
+ENV TDIARY_CONTRIB_VERSION=v5.0.11
 ENV TDIARY_CACHE_NULL_VERSION=v0.1.2
 ENV TDIARY_IO_RDB_VERSION=v0.0.2
-ENV TDIARY_STYLE_GFM_VERSION=v0.3.0
-ENV MAGELLAN_PROXY_VERSION=0.1.5
+ENV TDIARY_STYLE_GFM_VERSION=v1.2.0
+ENV MAGELLAN_PROXY_VERSION=0.1.9
 
 ## install tdiary-core to /usr/src/app
 RUN git clone -b ${TDIARY_CORE_VERSION} https://github.com/tdiary/tdiary-core.git /usr/src/app
 RUN cd /usr/src/app && bundle install --jobs=4 --without=development:test
+
+## install libidn11-dev package
+## (tdiary-style-gfm gem depends on twitter-text gem, twitter-text gem depends on idn-ruby gem)
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends libidn11-dev
 
 ## customize tdiary
 ADD build /build
