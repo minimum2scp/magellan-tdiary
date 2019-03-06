@@ -1,7 +1,7 @@
 version: "2"
 services:
   nginx:
-    image: nginx:1.11
+    image: nginx:1.14
     volumes:
       - ./volumes/nginx/tdiary.conf:/etc/nginx/conf.d/tdiary.conf:ro
 
@@ -27,7 +27,7 @@ services:
       #- RUBY_GC_PROFILER_ENABLED=false
 
   db:
-    image: mysql:5.6
+    image: mysql:5.7
     volumes:
       - ./volumes/mysql/charset.cnf:/etc/mysql/conf.d/charset.cnf:ro
     environment:

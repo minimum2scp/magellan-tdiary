@@ -4,6 +4,7 @@
  * Update tdiary-core, tdiary-contrib to 5.0.11
  * Update tdiary-style-gfm to 1.2.0
  * Update magellan-proxy to 0.1.9
+ * Update nginx to 1.14, mysql to 5.7 in docker-compose.yml
 
 ## 0.1.14 (2016-07-01)
 
