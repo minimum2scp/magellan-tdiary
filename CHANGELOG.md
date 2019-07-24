@@ -1,3 +1,8 @@
+## Unreleased
+
+ * Update debian to 10 (buster)
+ * Update ruby to 2.6.3
+
 ## 0.1.15 (2019-03-06)
 
  * Update ruby to 2.6.1
