@@ -1,3 +1,11 @@
+## 0.1.16 (2019-07-24)
+
+ * Update debian to 10 (buster)
+ * Update ruby to 2.6.3
+ * Update tdiary to 5.0.14
+ * Update tdiary-contrib to 5.0.13
+ * Update nginx to 1.16 in docker-compose.yml
+
 ## 0.1.15 (2019-03-06)
 
  * Update ruby to 2.6.1
