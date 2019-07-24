@@ -1,7 +1,7 @@
 version: "2"
 services:
   nginx:
-    image: nginx:1.14
+    image: nginx:1.16
     volumes:
       - ./volumes/nginx/tdiary.conf:/etc/nginx/conf.d/tdiary.conf:ro
 
