@@ -1,3 +1,7 @@
+## Unreleased
+
+* Update ruby to 2.7.0
+
 ## 0.1.16 (2019-07-24)
 
  * Update debian to 10 (buster)
