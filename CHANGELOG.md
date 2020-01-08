@@ -1,4 +1,4 @@
-## Unreleased
+## 0.1.17 (2020-01-08)
 
 * Update ruby to 2.7.0
 * Update tdiary to 5.1.0
