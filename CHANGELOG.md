@@ -1,3 +1,9 @@
+## 0.1.17 (2020-01-08)
+
+* Update ruby to 2.7.0
+* Update tdiary to 5.1.0
+* Update tdiary-contrib to 5.1.0
+
 ## 0.1.16 (2019-07-24)
 
  * Update debian to 10 (buster)
